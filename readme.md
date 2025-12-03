@@ -4,14 +4,14 @@ This repo is a simple test in convert [GIM_ROMA](https://github.com/xuelunshen/g
 # Environment
 python = 3.9  
 onnx     
-onnx-simplifier
-onnxruntime-gpu
-opencv
-torch
+onnx-simplifier  
+onnxruntime-gpu  
+opencv  
+torch  
 
 # How to Use
 ## 1.pytorch 
-1.1 get onnx model from the python file 
+1.1 get onnx model from the python file   
 Watch out the path in extra.py file 
 ```bash
 python extra.py
@@ -76,3 +76,4 @@ tested on RTX4070(LAPTOP)
 - Email: [zhangpengcheng@sjtu.edu.cn](mailto:zhangpengcheng@sjtu.edu.cn)
 
 - GitHub: [https://github.com/Percylevent](https://github.com/Percylevent)
+
