@@ -33,20 +33,20 @@ python testonnx.py
 
 ## 2.tensorrt
 2.1 install tensorrt 
-watch out do not use tensort 10.10.0(I got wired error),recommend tensorrt 10.8.0
+watch out do not use tensort 10.10.0(I got wired error),recommend tensorrt 10.8.0  
 install tensorrt python package in tensorrt/python/
 
 2.2convert onnx model to .engine file 
 ```bash
 trtexec --onnx=/home/percy/workspace/roma_trt/onnx_ori/roma_core.onnx  --saveEngine=/home/percy/workspace/roma_trt/roma_core_ori.engine --minShapes=image_a:1x3x504x504,image_b:1x3x504x504  --optShapes=image_a:1x3x504x504,image_b:1x3x504x504  --maxShapes=image_a:1x3x504x504,image_b:1x3x504x504  --fp16 --verbose
 ```
-you need to chang the path to yours
-similarily you can do this with the onnx_sim 
-**note**:you need to remove the roma_core_ori_fp16.engine in this repo, .engine file must be made in your own machine
+you need to chang the path to yours  
+similarily you can do this with the onnx_sim   
+**note**:you need to remove the roma_core_ori_fp16.engine in this repo, .engine file must be made in your own machine  
 
 
-2.3test the tensorrt with python
-now you get the .engine file 
+2.3test the tensorrt with python  
+now you get the .engine file   
 ```bash
 python testtrt.py
 ```
@@ -55,7 +55,7 @@ python testtrt.py
 cd roma_cpp/build
 ./roma_app
 ```
-**note**:you need to remove the roma_core_ori_fp16.engine in this repo, .engine file must be made in your own machine
+**note**:you need to remove the roma_core_ori_fp16.engine in this repo, .engine file must be made in your own machine  
 
 
 # Performance
@@ -76,4 +76,5 @@ tested on RTX4070(LAPTOP)
 - Email: [zhangpengcheng@sjtu.edu.cn](mailto:zhangpengcheng@sjtu.edu.cn)
 
 - GitHub: [https://github.com/Percylevent](https://github.com/Percylevent)
+
 
