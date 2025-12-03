@@ -1,16 +1,16 @@
-#Brief Introduction
-This repo is a simple test in convert [GIM_ROMA](https://github.com/xuelunshen/gim) or [ROMA](https://github.com/Parskatt/RoMa) image matcher pytorch to tensorrt 
+# Brief Introduction
+This repo is a simple test in convert [GIM_ROMA](https://github.com/xuelunshen/gim) or [ROMA](https://github.com/Parskatt/RoMa) image matcher pytorch to tensorrt  
 
-#Environment
-python = 3.9
+# Environment
+python = 3.9  
 onnx     
 onnx-simplifier
 onnxruntime-gpu
 opencv
 torch
 
-#How to Use
-##1.pytorch 
+# How to Use
+## 1.pytorch 
 1.1 get onnx model from the python file 
 Watch out the path in extra.py file 
 ```bash
@@ -31,7 +31,7 @@ you can pass this step and use the [onnx model] in onnx-ori and onnx-sim directl
 python testonnx.py
 ```
 
-##2.tensorrt
+## 2.tensorrt
 2.1 install tensorrt 
 watch out do not use tensort 10.10.0(I got wired error),recommend tensorrt 10.8.0
 install tensorrt python package in tensorrt/python/
@@ -42,7 +42,7 @@ trtexec --onnx=/home/percy/workspace/roma_trt/onnx_ori/roma_core.onnx  --saveEng
 ```
 you need to chang the path to yours
 similarily you can do this with the onnx_sim 
-note:you need to remove the roma_core_ori_fp16.engine in this repo, .engine file must be made in your own machine
+**note**:you need to remove the roma_core_ori_fp16.engine in this repo, .engine file must be made in your own machine
 
 
 2.3test the tensorrt with python
@@ -55,10 +55,10 @@ python testtrt.py
 cd roma_cpp/build
 ./roma_app
 ```
-note:you need to remove the roma_core_ori_fp16.engine in this repo, .engine file must be made in your own machine
+**note**:you need to remove the roma_core_ori_fp16.engine in this repo, .engine file must be made in your own machine
 
 
-#Performance
+# Performance
 tested on RTX4070(LAPTOP)
 |  | time|
 |:--:|:--:|
@@ -74,4 +74,5 @@ tested on RTX4070(LAPTOP)
 
 - Institution: Shanghai Jiao Tong University
 - Email: [zhangpengcheng@sjtu.edu.cn](mailto:zhangpengcheng@sjtu.edu.cn)
+
 - GitHub: [https://github.com/Percylevent](https://github.com/Percylevent)
