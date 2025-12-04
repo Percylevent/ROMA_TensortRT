@@ -24,7 +24,7 @@ python onnxsimple.py
 ```
 you can get onnx-sim
 
-you can pass this step and use the [onnx model] in onnx-ori and onnx-sim directly.
+you can pass this step and download the onnx model in [onnx-ori](https://drive.google.com/drive/folders/1--WvnclFGsjRBd_2ByscYWTKNusOJnrx?usp=sharing) and [onnx-sim](https://drive.google.com/drive/folders/1DgLG-74HgarsDV1Inluuhodj6jF8hbdI?usp=sharing) directly.
 
 1.3 test the onnx model
 ```bash
@@ -76,6 +76,7 @@ contact me if you have any questions.
 - Institution: Shanghai Jiao Tong University
 - Email: [zhangpengcheng@sjtu.edu.cn](mailto:zhangpengcheng@sjtu.edu.cn)
 - GitHub: [https://github.com/Percylevent](https://github.com/Percylevent)
+
 
 
 
