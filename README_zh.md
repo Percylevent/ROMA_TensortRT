@@ -38,8 +38,8 @@ pip install torch onnx onnx-simplifier onnxruntime-gpu opencv-python
 
 **TensorRT 环境:**
 
-- **强烈推荐**: TensorRT 8.6.x (经测试稳定)。
-- **注意**: TensorRT 10.0.0 在测试中遇到未知错误，不推荐使用。请从 NVIDIA 官网下载并安装 TensorRT，并确保其 Python 包已正确安装。
+- **强烈推荐**: TensorRT 10.8.0 (经测试稳定)。
+- **注意**: TensorRT 10.10.0 在测试中遇到未知错误，不推荐使用。请从 NVIDIA 官网下载并安装 TensorRT，并确保其 Python 包已正确安装。
 
 ## 🚀 快速开始
 
