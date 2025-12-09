@@ -52,7 +52,7 @@ You can either export the ONNX model yourself or download our pre-converted file
 #### Option A: Export the Model Yourself (Recommended)
 
 1.  **Export the original ONNX model**:
-    download the weight file form [gim_roma.ckpt](https://drive.google.com/file/d/1j9aCfzhMlgLuoSNYaDXmHbVoJTIkK6xh/view?usp=sharing)
+    Download the weight file form [gim_roma.ckpt](https://drive.google.com/file/d/1j9aCfzhMlgLuoSNYaDXmHbVoJTIkK6xh/view?usp=sharing) first and put it in the /pytorch.    
     Ensure the model path in `extra.py` is correct, then run:
     ```bash
     python extra.py
@@ -139,5 +139,6 @@ Feel free to reach out if you have any questions or suggestions regarding this p
 - **GitHub**: [https://github.com/Percylevent](https://github.com/Percylevent)
 
 If you find this project helpful, please give it a ⭐️ Star!
+
 
 
