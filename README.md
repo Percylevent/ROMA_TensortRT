@@ -52,13 +52,14 @@ You can either export the ONNX model yourself or download our pre-converted file
 #### Option A: Export the Model Yourself (Recommended)
 
 1.  **Export the original ONNX model**:
+    download the weight file form [gim_roma.ckpt](https://drive.google.com/file/d/1j9aCfzhMlgLuoSNYaDXmHbVoJTIkK6xh/view?usp=sharing)
     Ensure the model path in `extra.py` is correct, then run:
     ```bash
     python extra.py
     ```
     Upon success, you will find `roma_core.onnx` in the `onnx-ori` directory.
 
-2.  **Simplify the ONNX model**:
+3.  **Simplify the ONNX model**:
     To achieve better performance, we simplify the model using `onnx-simplifier`.
     ```bash
     python onnxsimple.py
@@ -68,9 +69,9 @@ You can either export the ONNX model yourself or download our pre-converted file
 #### Option B: Download Pre-converted Models
 
 Alternatively, download the ONNX models from the links below and extract them to the project's root directory.
-
-- [onnx-ori (Original Model)](https://drive.google.com/drive/folders/1--WvnclFGsjRBd_2ByscYWTKNusOJnrx?usp=sharing)
-- [onnx-sim (Simplified Model)](https://drive.google.com/drive/folders/1DgLG-74HgarsDV1Inluuhodj6jF8hbdI?usp=sharing)
+- [onnx_model](https://drive.google.com/drive/folders/1ehF6EUMwra4uHAFHjw6YR1VGwEqi4ZJm)
+- [onnx-ori (Original Model)]
+- [onnx-sim (Simplified Model)]
 
 #### (Optional) Step 1.3: Test the ONNX Model
 Before converting to TensorRT, you can verify the ONNX model's correctness.
@@ -138,4 +139,5 @@ Feel free to reach out if you have any questions or suggestions regarding this p
 - **GitHub**: [https://github.com/Percylevent](https://github.com/Percylevent)
 
 If you find this project helpful, please give it a ⭐️ Star!
+
 
