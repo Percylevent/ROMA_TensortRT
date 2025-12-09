@@ -50,13 +50,14 @@ pip install torch onnx onnx-simplifier onnxruntime-gpu opencv-python
 #### 选项 A: 自己导出模型 (推荐)
 
 1.  **导出原始 ONNX 模型**:
+    首先下载[gim_roma.ckpt](https://drive.google.com/file/d/1j9aCfzhMlgLuoSNYaDXmHbVoJTIkK6xh/view?usp=sharing)权重文件，并放到/pytorch路径下。  
     请确保 `extra.py` 文件中的模型路径正确，然后运行：
     ```bash
     python extra.py
     ```
     运行成功后，你将在 `onnx-ori` 目录下得到 `roma_core.onnx` 文件。
 
-2.  **简化 ONNX 模型**:
+3.  **简化 ONNX 模型**:
     为了获得更好的性能，我们使用 `onnx-simplifier` 对模型进行简化。
     ```bash
     python onnxsimple.py
@@ -66,9 +67,9 @@ pip install torch onnx onnx-simplifier onnxruntime-gpu opencv-python
 #### 选项 B: 直接下载
 
 你也可以从下面的链接直接下载我们准备好的 ONNX 模型，并解压到项目根目录。
-
-- [onnx-ori (原始模型)](https://drive.google.com/drive/folders/1--WvnclFGsjRBd_2ByscYWTKNusOJnrx?usp=sharing)
-- [onnx-sim (简化模型)](https://drive.google.com/drive/folders/1DgLG-74HgarsDV1Inluuhodj6jF8hbdI?usp=sharing)
+- [onnx_model](https://drive.google.com/drive/folders/1ehF6EUMwra4uHAFHjw6YR1VGwEqi4ZJm?usp=sharing)  
+- [onnx-ori (原始模型)]
+- [onnx-sim (简化模型)]
 
 #### 步骤 1.3 (可选): 测试 ONNX 模型
 
